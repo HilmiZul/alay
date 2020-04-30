@@ -6,6 +6,10 @@ alay.teks = input()
 
 print("======================")
 
+print(alay.konversi_kata())
+
+print("======================")
+
 print(alay.besarkecil())
 
 print(alay.gabunganangka())

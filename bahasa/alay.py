@@ -1,3 +1,5 @@
+from .kamus import kamus
+
 class Alay:
   def __init__(self):
     self.teks = ""
@@ -44,4 +46,16 @@ class Alay:
       if e in kamus:
         teks = teks.replace(e, 'i')
     return teks
-        
+
+  def konversi_kata(self):
+    kata = self.teks.split()
+
+    kamus_key = kamus.keys()
+    kamus_key = list(kamus_key)
+
+    for i in range(len(kata)):
+      if kata[i] in kamus_key:
+        kata[i] = kamus[kata[i]]
+    
+    hasil = ' '.join(kata)
+    return hasil
