@@ -50,8 +50,7 @@ class Alay:
   def konversi_kata(self):
     kata = self.teks.split()
 
-    kamus_key = kamus.keys()
-    kamus_key = list(kamus_key)
+    kamus_key = list(kamus.keys())
 
     for i in range(len(kata)):
       if kata[i] in kamus_key:
